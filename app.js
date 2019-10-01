@@ -1,12 +1,8 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+const bot_base = require('./bot-base')
 
-const token = ''; //Put your bot token in https://discordapp.com/developers/applications and go to your bot
+const token = process.argv[2];
 
-bot.on('ready', () => 
-{
-    console.log('This bot is online!');
-});
+const bot = bot_base(token);
 
 bot.on('message', message =>
 {
@@ -17,7 +13,5 @@ bot.on('message', message =>
         (arg.charAt(2) === 'p' || arg.charAt(2) === 'P') && 
         (arg.charAt(3) === 'r' || arg.charAt(3) === 'R'));
     if (desiremsg)
-        message.channel.sendMessage('Sem papel');
+        message.channel.send('Sem papel', {tts: true});
 }); 
-
-bot.login(token);
