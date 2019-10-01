@@ -1,0 +1,12 @@
+{
+  "name": "discord-impressora-bot",
+  "version": "1.0.0",
+  "description": "A bot that prints when user use !imprimir",
+  "main": "app.js",
+  "author": "Miguel Panuto",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
