@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const token = 'NjI2NzgwMzI5NTcwNDY3ODQw.XZIIbQ.ZzZzjB0lQQ3aDYkFCmyXrvgdxeE';
+const token = ''; //Put your bot token in https://discordapp.com/developers/applications and go to your bot
 
 bot.on('ready', () => 
 {
