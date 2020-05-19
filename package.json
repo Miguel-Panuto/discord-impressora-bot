@@ -6,6 +6,9 @@
   "author": "Miguel Panuto",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "discord.js": "^11.5.1"
   }
